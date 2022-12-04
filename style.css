@@ -1,0 +1,22 @@
+body{
+    background: #181818;
+    color: #e6e6e6;
+}
+.img1{
+    user-select: none;
+    filter: blur(300px);
+}
+.mostrar{
+    display: none;
+}
+@media (max-width: 900px) {
+    main{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+    .mostrar{
+        display: unset;
+    }
+}

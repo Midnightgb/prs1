@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PetroBastaYa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="d-flex justify-content-center" id="cambio">Quiero verte, ¿Aceptas?</h1>
+        <div class="col-6 mx-auto" id="imagench">
+            <img src="img/marge-ashamed.gif" alt="" class="img-fluid">
+        </div>
+    </header>
+    <div class="mostrar container">
+        <div class="row m-5">
+            <div class="col-12">
+                <h3>Lo siento pero solo puedes acceder desde computador</h1>
+                    <img src="img/hive-cats.gif" alt="" class="img-fluid">
+            </div>    
+        </div>
+    </div>
+    <main>
+        <hr>
+        <div id="agregar" class="container">
+        </div>
+
+        <div id="By" style="position:absolute; height: 210px; left: 63.9%;">
+            <input id="bys" type="button" value="SI" onclick="SI()">
+        </div>
+        <div id="Bn" style="position: absolute;height: 210px; left: 300px; top: 540px;">
+            <input id="Bns" type="button" value="JAMAS" onmouseover="No()" onclick="rapidez()">
+        </div>
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title" id="modalTitleId">ola :,)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid bg-dark">
+                        <h1>PORFAVOR ENVIAR SCREENSHOT DE LOS DATOS LLENADOS</h1>
+                        <p>Aun no aprendo bases de datos :c</p>
+                        <img src="img/penguin-penguins.gif" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ño</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script>
+        var modalId = document.getElementById('modalId');
+        modalId.addEventListener('show.bs.modal', function (event) {
+            let button = event.relatedTarget;
+            let recipient = button.getAttribute('data-bs-whatever');
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
